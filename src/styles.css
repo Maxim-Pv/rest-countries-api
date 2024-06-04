@@ -7,27 +7,36 @@
 }
 
 body {
-    font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.dark-mode {
+  --icon-image: url(../icons/icon-sun.svg);
+  --text-change-mode: hsl(0, 0%, 100%);
+  --background-body: hsl(207, 26%, 17%);
+  --background-header: hsl(209, 23%, 22%);
+}
+
+.light-mode {
+  --icon-image: url(../icons/icon-moon.svg);
+  --text-change-mode: hsl(200, 15%, 8%);
+  --background-body: hsl(0, 0%, 98%);
+  --background-header: white;
 }
 
 .container {
   max-width: 1440px;
-}
-
-.dark-mode {
-    background-color: hsl(207, 26%, 17%);
-}
-
-.light-mode {
-    background-color: hsl(0, 0%, 98%);
+  background-color: var(--background-body);
+  min-height: 100vh;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
-    margin: 0 30px;
     align-items: center;
-    padding: 20px;
+    padding: 20px 60px;
+    background-color: var(--background-header);
+    color: var(--text-change-mode);
 }
 
 .btn-change-mode {
@@ -35,14 +44,69 @@ body {
   align-items: center;
   background-color: inherit;
   border: none;
+  color: var(--text-change-mode);
+  cursor: pointer;
+  gap: 5px;
 }
 
-.btn-mode {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20px;
-    width: 40px;
-    height: 40px;
-    border: none;
-    cursor: pointer;
+.icon-change-mode {
+  background: var(--icon-image) no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+/* home-page-container */
+
+.home-page-container {
+  padding: 40px 60px;
+}
+
+/* search-filter */
+
+.search-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+
+/* country-list-container */
+
+.country-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+}
+
+/* country-card */
+
+.country-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-header);
+  color: var(--text-change-mode);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.flag-container {
+  display: flex;
+  height: 180px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.flag {
+  width: 100%;
+  object-fit: cover;
+}
+
+.country-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
 }

@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import './styles.css';
 import { Route, Routes } from 'react-router';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import CountryPage from './pages/CountryPage';
+import './styles.css';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);

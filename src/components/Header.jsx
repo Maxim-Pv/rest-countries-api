@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import React from 'react'
 
 const Header = ({ darkMode, setDarkMode }) => {
@@ -9,8 +7,8 @@ const Header = ({ darkMode, setDarkMode }) => {
       <button className='btn-change-mode'
         onClick={() => setDarkMode(!darkMode)}
       >
-        <FontAwesomeIcon icon={faMoon} style={{color: "#f9fafa",}} />
-        {darkMode ? 'Light mode' : 'Dark mode'}
+        <span className='icon-change-mode'></span>
+        {darkMode ? 'Light Mode' : 'Dark Mode'}
       </button>
     </div>
   )
