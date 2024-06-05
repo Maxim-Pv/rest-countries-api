@@ -7,7 +7,6 @@ const CountryList = ({ searchCountry, region }) => {
 
   useEffect(() => {
     setCountries(data);
-    
   }, [])
 
   useEffect(() => {

@@ -110,3 +110,28 @@ body {
   gap: 10px;
   padding: 20px;
 }
+
+/* country-detail */
+
+.country-detail-container {
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.country-detail {
+  width: 50%;
+}
+
+.country-detail-flag {
+  width: 40%;
+}
+
+.country-detail-info {
+  display: flex;
+}
+
+.country-detail-info-list {
+  list-style-type: none;
+}

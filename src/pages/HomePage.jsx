@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import SearchFilter from '../components/SearchFilter'
-import CountryList from '../components/CountryList';
+import CountryList from '../components/CountryList'
 
 const HomePage = () => {
   const [searchCountry, setSearchCountry] = useState('');
@@ -14,7 +14,7 @@ const HomePage = () => {
         setRegion={setRegion}
       />
       <CountryList
-        searchCountry={searchCountry}
+        searchCountry={searchCountry.toLowerCase()}
         region={region}
       />
     </div>
