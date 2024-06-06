@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 steps.txt
+.editorconfig
+prettier.config.js
