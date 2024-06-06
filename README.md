@@ -29,9 +29,6 @@ Users should be able to:
 ![desktop-design-dark](design/desktop-design-home-dark.jpg)
 ![desktop-design-light](design/desktop-design-home-light.jpg)
 ![desktop-design-detail](design/desktop-design-detail-dark.jpg)
-![mobile-design-dark](design/mobile-design-home-dark.jpg)
-![mobile-modal-light](design/mobile-design-home-light.jpg)
-![mobile-design-detail](design/mobile-design-detail-dark.jpg)
 
 ### Links
 
